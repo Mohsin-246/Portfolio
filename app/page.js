@@ -21,7 +21,6 @@ export default async function Home() {
       <Skills />
       <Projects />
       <Education />
-      
       <ContactSection />
     </div>
   )

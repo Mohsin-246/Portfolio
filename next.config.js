@@ -1,26 +1,10 @@
-const path = require('path')
- 
-module.exports = {
-  sassOptions: {
-    includePaths: [path.join(__dirname, 'styles')],
-  },
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'res.cloudinary.com',
-        pathname: '**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'media.dev.to',
-        pathname: '**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'media2.dev.to',
-        pathname: '**',
-      },
-    ],
-  },
-}
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export",
+  distDir: "out",  // Ensures correct output folder
+  images: { unoptimized: true },  // Fixes image issues on GitHub Pages
+  basePath: "/Portfolio",  // Matches your GitHub repo name (case-sensitive!)
+  assetPrefix: "/Portfolio"
+};
+
+module.exports = nextConfig;

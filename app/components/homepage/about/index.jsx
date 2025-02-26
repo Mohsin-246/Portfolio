@@ -24,7 +24,7 @@ function AboutSection() {
         </div>
         <div className="flex justify-center order-1 lg:order-2">
           <Image
-            src="/Portfolio/assets/mohsin_profile_1.jpg"
+            src="assets/mohsin_profile_1.jpg"
             width={280}
             height={280}
             alt="Mohsin Satti"

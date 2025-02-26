@@ -2,6 +2,7 @@
 
 import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
+import profile from "@/app/assets/svg/Mohsin_profile_1.jpg"
 
 
 function AboutSection() {
@@ -24,7 +25,7 @@ function AboutSection() {
         </div>
         <div className="flex justify-center order-1 lg:order-2">
           <Image
-            src="assets/mohsin_profile_1.jpg"
+            src={profile}
             width={280}
             height={280}
             alt="Mohsin Satti"

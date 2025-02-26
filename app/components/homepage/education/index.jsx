@@ -5,6 +5,7 @@ import { BsPersonWorkspace } from "react-icons/bs";
 import lottieFile from '../../../assets/lottie/study.json';
 import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
+import glow from "@/public/blur-23.svg"
 
 function Education() {
   return (
@@ -46,13 +47,13 @@ function Education() {
                 educations.map(education => (
                   <GlowCard key={education.id} identifier={`education-${education.id}`}>
                     <div className="p-3 relative text-white">
-                      {/* <Image
-                        src="/blur-23.svg"
+                      <Image
+                        src={glow}
                         alt="Hero"
                         width={1080}
                         height={200}
                         className="absolute bottom-0 opacity-80"
-                      /> */}
+                      />
                       <div className="flex justify-center">
                         <p className="text-xs sm:text-sm text-[#16f2b3]">
                           {education.duration}
